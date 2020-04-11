@@ -15,16 +15,26 @@ namespace Problem2_Family
             get { return people;}
             set { people = value; }
         }
-
+        //Печат на хора
         public void Print()
         {
             foreach (var item in people)
             {
-                if (item.Age>30)
+               Console.WriteLine($"{item.Name}: {item.Age} години");
+                       
+            }
+        }
+
+        //Втори начин за печат на хора, по-големи от 30 години
+        public void Print1()
+        {
+            foreach (var item in people)
+            {
+                if (item.Age > 30)
                 {
                     Console.WriteLine($"{item.Name}: {item.Age} години");
                 }
-                
+
             }
         }
     }

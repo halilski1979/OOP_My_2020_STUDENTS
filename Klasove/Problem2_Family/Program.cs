@@ -24,7 +24,8 @@ namespace Problem2_Family
                 ivanovi.People.Add(p1);
             }
             Console.WriteLine("==================");
-            ivanovi.People = ivanovi.People.OrderBy(x=>x.Name).ToList();
+            //Сортиране по име и филтриране на хора, повече от 30 години
+            ivanovi.People = ivanovi.People.OrderBy(x=>x.Name).Where(y=>y.Age>30).ToList();
             ivanovi.Print();
 
         }
