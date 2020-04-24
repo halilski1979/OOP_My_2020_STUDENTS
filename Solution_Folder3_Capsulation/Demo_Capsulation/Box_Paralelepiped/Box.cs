@@ -26,6 +26,21 @@ namespace Box_Paralelepiped
 
         //}
 
+        //Валидация за дължина
+        public double Lenght
+        {
+            get { return lenght; }
+            set
+            {
+                if (value < 0)
+                {
+                    throw new ArgumentException("Lenght cannot be zero or negative.");
+                }
+                lenght = value;
+            }
+        }
+
+
         public double ObemV()
         {
             return lenght * width * height;

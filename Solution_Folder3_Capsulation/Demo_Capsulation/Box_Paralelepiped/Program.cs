@@ -17,7 +17,7 @@ namespace Box_Paralelepiped
             Box b = new Box(lenght1,width1,height1);
             Console.WriteLine($"Palna: {b.PalnaPovarhnina()}");
             Console.WriteLine($"Okolna: {b.Okolna()}");
-            Console.WriteLine($"Obem: {b.ObemV(lenght1,width1,height1)}");
+            Console.WriteLine($"Obem: {b.ObemV()}");
         }
     }
 }
